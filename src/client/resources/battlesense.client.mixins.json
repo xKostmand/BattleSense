@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.chrys.battlesense.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"CameraMixin",
+		"EntityMixin",
+		"TntRendererMixin",
+		"InGameHudMixin",
+		"GameRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

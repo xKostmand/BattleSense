@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "battlesense",
+	"version": "${version}",
+	"name": "Battle Sense",
+	"description": "A competitive utility mod featuring decoupled camera mechanics (Freelook) and tactical visual overlays for explosive entities.",
+	"authors": [
+		"xKostmand"
+	],
+	"contact": {
+		"homepage": "https://github.com/xKostmand",
+		"sources": "https://github.com/xKostmand/BattleSense"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/battlesense/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.chrys.battlesense.BattleSense"
+		],
+		"client": [
+			"com.chrys.battlesense.BattleSenseClient"
+		],
+		"fabric-datagen": [
+			"com.chrys.battlesense.BattleSenseDataGenerator"
+		]
+	},
+	"mixins": [
+		"battlesense.mixins.json",
+		{
+			"config": "battlesense.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
