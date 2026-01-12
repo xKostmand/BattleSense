@@ -24,7 +24,6 @@ public class FreelookHandler {
                 GLFW.GLFW_KEY_LEFT_ALT,
                 "BattleSense"
         );
-        // Note: You must register this keybinding in your Main Mod Initializer!
     }
 
     public static void tick() {
